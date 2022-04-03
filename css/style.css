@@ -16,6 +16,8 @@ body {
     font-style: normal;
 }
 
+
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -49,6 +51,10 @@ body {
     margin: 0 41px 0 0;
 }
 
+.header__link:hover {
+    fill: var(--button-bck);
+}
+
 .header__link {
     margin: 0 0 0 33px;
 }
@@ -63,8 +69,65 @@ body {
     background-color: transparent;
 }
 
-.header-nav {
+.header__burger:hover+.header__nav,
+.header__burger:focus+.header__nav,
+.header__burger:active+.header__nav {
+    display: block;
+    width: 232px;
+    fill: #F16D7F;
+}
+
+.button_search {
+    border: none;
+    background-color: transparent;
+}
+
+.pink__icon {
+    background-color: transparent;
+    fill: white;
+}
+
+.pink__icon:hover {
+    fill: var(--button-bck);
+}
+
+.header__nav {
     display: none;
+    position: absolute;
+    position: right;
+    background-color: #FFFFFF;
+}
+
+.header__nav:hover {
+    background-color: #FFFFFF;
+    display: block;
+    width: 232px;
+}
+
+.header__nav-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.nav-item__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+.nav-item__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-bottom: 12px;
 }
 
 .brand {
@@ -72,8 +135,8 @@ body {
 }
 
 .brand__img {
-    width: 800px;
-    height: 765px;
+    min-width: 800px;
+    min-height: 765px;
     background-color: var(--pink-bkg);
 }
 
@@ -91,6 +154,8 @@ body {
     line-height: 58px;
     color: #222222;
     text-transform: uppercase;
+    border-left: 12px solid var(--button-bck);
+    padding-left: 16px;
 }
 
 .brand__title__lower {
@@ -101,7 +166,7 @@ body {
 }
 
 .brand__title-pink {
-    color: var(--pink-color)
+    color: var(--button-bck)
 }
 
 .sales__list {
@@ -112,23 +177,23 @@ body {
 }
 
 .sales__item {
-    width: 360px;
+    min-width: 360px;
     background-color: var(--sales-bkg);
 }
 
 .sales__item--woman {
     background-image: url(../img/woman-sales.jpg);
-    height: 260px;
+    min-height: 260px;
 }
 
 .sales__item--man {
     background-image: url(../img/man-sales.jpg);
-    height: 260px;
+    min-height: 260px;
 }
 
 .sales__item--chaild {
     background-image: url(../img/chaild-sales.jpg);
-    height: 260px;
+    min-height: 260px;
 }
 
 .sales__item--choes {
@@ -136,7 +201,7 @@ body {
     width: 100%;
     margin-top: 30px;
     mask-repeat: no-repeat;
-    height: 180px;
+    min-height: 180px;
 }
 
 .sales__item-text {
@@ -195,11 +260,46 @@ body {
 }
 
 .products__item {
+    position: relative;
     width: 360px;
     background-color: var(--products-bkg);
     margin-bottom: 30px;
 }
 
+.button__add-to-cart {
+    padding: 10px 13px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    background-color: transparent;
+    display: none;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.button__add-img {
+    width: 25px;
+    margin-right: 11px;
+}
+
+.products__item:hover .button__add-to-cart,
+.products__item:hover .overlay {
+    display: block;
+}
 
 .products__item-title {
     font-weight: 400;
@@ -298,7 +398,7 @@ body {
 
 .footer__wrp--preview {
     background-image: url(../img/bkgfooter.jpg);
-    height: 448px;
+    min-height: 448px;
 }
 
 .footer__list {
@@ -321,7 +421,6 @@ body {
     line-height: 24px;
     text-align: center;
     color: #222224;
-
     align-items: center;
     padding-top: 32px;
 }
@@ -347,7 +446,7 @@ body {
 
 .footer__contacts--prewiev {
     background-color: var(--black-bkg);
-    height: 80px;
+    min-height: 80px;
 }
 
 .footer__contacts-list {
@@ -364,6 +463,12 @@ body {
     color: #FBFBFB;
 }
 
-.footer__img {
+.svg__social-icon {
+    display: flex;
+}
+
+.svg__icon {
     padding: 0 0 0 5px;
 }
+
+.svg_box:hover {}
