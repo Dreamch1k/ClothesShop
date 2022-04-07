@@ -64,6 +64,10 @@ body {
     align-items: center;
 }
 
+.basket__amount {
+    position: relative;
+}
+
 .header__burger {
     border: none;
     background-color: transparent;
@@ -83,12 +87,29 @@ body {
 }
 
 .pink__icon {
-    background-color: transparent;
     fill: white;
 }
 
-.pink__icon:hover {
-    fill: var(--button-bck);
+.pink__icon:hover,
+.pink__icon:active,
+.pink__icon:focus {
+    fill: #F16D7F;
+}
+
+.header__bassket-amount {
+    position: absolute;
+    border: 1px solid #F16D7F;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    top: -30%;
+    left: 80%;
 }
 
 .header__nav {
@@ -336,10 +357,11 @@ body {
     background-color: transparent;
     align-items: center;
     margin-top: 30px;
-
 }
 
-.products__button:hover {
+.products__button:hover,
+.products__button:active,
+.products__button:focus {
     background-color: var(--button-bck);
     color: white;
 }
@@ -468,7 +490,18 @@ body {
 }
 
 .svg__icon {
-    padding: 0 0 0 5px;
+    margin-left: 8px;
+    width: 32px;
+    min-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
 }
 
-.svg_box:hover {}
+.svg__icon:hover,
+.svg__icon:active,
+.svg__icon:focus {
+    background: var(--button-bck);
+    fill: white;
+}
