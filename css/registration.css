@@ -1,0 +1,176 @@
+:root {
+    --black-bkg: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F18B99;
+    --sales-bkg: #4E4544;
+    --sales-text-bkg: #FFFFFF;
+    --products-bkg: #F8F8F8;
+    --advantage-bkg: #222224;
+    --button-bck: #FF6A6A;
+}
+
+.reg__wrp {
+    background: #F8F3F4;
+    padding: 60px 0;
+    margin-bottom: 64px;
+}
+
+.reg__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.form__reg {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__view {
+    width: 100%;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 21px;
+    padding: 14px 17px;
+    color: #B1B1B1;
+}
+
+.form__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+    width: 100%;
+}
+
+.form__radiobox-wrp {
+    display: flex;
+    align-items: center;
+}
+
+.form__radio-text {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.form__view {
+    width: 100%;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 21px;
+    padding: 14px 17px;
+    color: #B1B1B1;
+}
+
+.form__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+    width: 100%;
+}
+
+.form__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 39px;
+}
+
+.products__button-reg {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #F26376;
+    padding: 14px 39px;
+    background-color: transparent;
+    margin-bottom: 96px;
+}
+
+.form__button-arrow {
+    fill: var(--button-bck);
+    margin-left: 20px;
+}
+
+.products__button-reg:hover,
+.products__button-reg:active,
+.products__button-reg:focus {
+    background-color: var(--button-bck);
+    color: white;
+}
+
+.products__button-reg:hover .form__button-arrow,
+.products__button-reg:active .form__button-arrow,
+.products__button-reg:focus .form__button-arrow {
+    fill: white;
+}
+
+.form__button {
+    padding: 16px 29px;
+}
+
+.form__radio {
+    border: 1px solid #B1B1B1;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+}
+
+.form__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.reg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adv__title-reg {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.adv__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 21px;
+}
+
+.adv__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.adv__svg {
+    padding-right: 23px;
+}
